@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Popular Foods</title>
+   <style>
+    body {
+        background-color: rgb(105, 103, 103);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2 {
+        color: white;
+    }
+
+    /* Universal Box Styling */
+    .Box1, .Box2, .Box3, .Box4 {
+        width: 30%; /* Adjust width for responsiveness */
+        min-width: 280px;
+        height: auto;
+        border: 2px solid red;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .Box1 img, .Box2 img, .Box3 img, .Box4 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Section Styling */
+    #box1, #box2, #box3, #box4 {
+        width: 97%;
+        border: 2px solid black;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    #box2, #box4 {
+        background-color: rgb(250, 248, 248);
+    }
+
+    /* Button Styling */
+    .btn {
+        background-color: rgb(175, 149, 61);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background-color: rgb(139, 119, 48);
+    }
+
+    /* ================== 📌 MEDIA QUERIES FOR RESPONSIVENESS ================== */
+    
+    /* Small screens (Tablets & Phones) */
+    @media (max-width: 1024px) {
+        .Box1, .Box2, .Box3, .Box4 {
+            width: 45%; /* 2 items per row */
+        }
+    }
+
+    /* Mobile screens */
+    @media (max-width: 768px) {
+        .Box1, .Box2, .Box3, .Box4 {
+            width: 100%; /* Single column layout */
+        }
+
+        #box1, #box2, #box3, #box4 {
+            flex-direction: column; /* Stack items vertically */
+        }
+    }
+
+   </style>
+</head>
+<body>
+   <h1>Most Popular Foods</h1>
+   <div id="box1">
+        <div class="Box1">
+            <img src="/Image/bargar.jpg">
+            <p>Testy Burger</p>
+            <a href="/Order Now.html" class="btn">Order Now</a>
+        </div>
+        <div class="Box1">
+            <img src="/Image/cacke.jpg">
+            <p>Testy Cake</p>
+            <a href="/Order Now.html" class="btn">Order Now</a>
+        </div>
+        <div class="Box1">
+            <img src="/Image/sweet.jpg">
+            <p>Testy Sweet</p>
+            <a href="/Order Now.html" class="btn">Order Now</a>
+        </div>
+   </div>
+
+   <h2>Our Food Gallery</h2>
+   <div id="box2">
+        <div class="Box2"><img src="./Image/14.jpg"></div>
+        <div class="Box2"><img src="./Image/13.jpg"></div>
+        <div class="Box2"><img src="./Image/12.jpeg"></div>
+   </div>
+
+   <div id="box3">
+        <div class="Box3"><img src="./Image/1.jpeg"></div>
+        <div class="Box3">
+            <h1>Please Order Delivery Now</h1>
+            <a href="/Order Now.html" class="btn">Order Now</a>
+        </div>
+        <div class="Box3"><img src="/Image/21.jpg"></div>
+   </div>
+
+   <div id="box4">
+        <div class="Box4"><img src="/Image/13.jpg"></div>
+        <div class="Box4"><img src="/Image/5.jpeg"></div>
+        <div class="Box4"><img src="/Image/14.jpg"></div>
+   </div>
+</body>
+</html>
